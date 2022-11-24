@@ -25,13 +25,16 @@ void ShowArray(string[] myArray)
 string[] NewArray(string[] myArray)
 {
     string[] newArray = new string[myArray.Length];
+
+    int j = 0;
     
     for (int i = 0; i < myArray.Length; i++)
     {
         
         if (myArray[i].Length <= 3)
         {
-            newArray[i] = myArray[i];
+            newArray[j] = myArray[i];
+            j++;
         }
     }
     return newArray;
