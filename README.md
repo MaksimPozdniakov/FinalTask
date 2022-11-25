@@ -22,4 +22,7 @@
 
 # Блок-схема третьего метода:
 
-![diagram](https://user-images.githubusercontent.com/114246876/203969360-5c3fe439-c516-46d8-935b-e9e1d4528b60.png)
+![1](https://user-images.githubusercontent.com/114246876/204018631-6ad182f3-d45b-4e27-9adb-5a18eea8b09c.png)
+
+![2](https://user-images.githubusercontent.com/114246876/204018655-4bf3e070-2031-4396-825a-b2f21349a640.png)
+
