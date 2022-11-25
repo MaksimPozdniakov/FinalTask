@@ -24,14 +24,24 @@ void ShowArray(string[] myArray)
 
 string[] NewArray(string[] myArray)
 {
-    string[] newArray = new string[myArray.Length];
+    int size = 0;
+    int k = 3;
+
+    for(int i = 0; i < myArray.Length; i++)
+    {
+        if (myArray[i].Length <= k)
+        {
+            size++;
+        }
+    }
+
+    string[] newArray = new string[size];
 
     int j = 0;
-    
+
     for (int i = 0; i < myArray.Length; i++)
     {
-        
-        if (myArray[i].Length <= 3)
+        if (myArray[i].Length <= k)
         {
             newArray[j] = myArray[i];
             j++;
