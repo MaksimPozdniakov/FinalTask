@@ -22,14 +22,13 @@ void ShowArray(string[] myArray)
     Console.WriteLine();
 }
 
-string[] NewArray(string[] myArray)
+string[] NewArray(string[] myArray, int symbolQuantity)
 {
     int size = 0;
-    int k = 3;
 
     for(int i = 0; i < myArray.Length; i++)
     {
-        if (myArray[i].Length <= k)
+        if (myArray[i].Length <= symbolQuantity)
         {
             size++;
         }
@@ -41,7 +40,7 @@ string[] NewArray(string[] myArray)
 
     for (int i = 0; i < myArray.Length; i++)
     {
-        if (myArray[i].Length <= k)
+        if (myArray[i].Length <= symbolQuantity)
         {
             newArray[j] = myArray[i];
             j++;
@@ -55,7 +54,9 @@ Console.Write("Наш изначальный массив: ");
 ShowArray(myArray);
 
 Console.WriteLine();
+Console.Write("Укажите максимальное количество символов (для выборки) ");
+int symbolquantity = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Результирующий массив: ");
-string[] newArray = NewArray(myArray);
+string[] newArray = NewArray(myArray,symbolquantity);
 ShowArray(newArray);
